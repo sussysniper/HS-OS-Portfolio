@@ -8,16 +8,21 @@
 **Live Application:** [https://hs-os-portfolio.vercel.app/](https://hs-os-portfolio.vercel.app/)
 
 ## Overview
-HS-OS is a comprehensive, dark-mode "Operating System" built for the DoTA Vibe Coding Competition. Engineered entirely with pure Vanilla JS, HTML, and CSS—without any external frameworks or dependencies—it functions as a highly interactive, multi-page developer portfolio.
+HS-OS is a comprehensive, dark-mode "Operating System" built for the DoTA Vibe Coding Competition. Engineered entirely with pure Vanilla JS, HTML, and CSS—without any external frameworks—it functions as a highly interactive, multi-page developer portfolio.
 
 ## Core Features
-- **Interactive Terminal:** A fully functional command-line interface supporting custom commands (e.g., `help`, `about`, `matrix`, `hire`).
+- **Interactive Terminal:** A functional command-line interface supporting custom commands (e.g., `help`, `about`, `matrix`, `hire`).
 - **Buddy.AI:** A custom, local, keyword-driven virtual assistant providing information regarding academic background, technical skills, and project details.
 - **The Arcade:** Five playable games developed from scratch, including Snake, Tic-Tac-Toe (utilizing a Minimax decision algorithm), Text RPG, Pong, and Minesweeper.
 - **Command Palette:** A global navigation interface accessible via `Ctrl + K`.
 - **Developer Tools:** Client-side utilities including a Markdown editor with live rendering, a JSON formatter, and a Base64 encoder/decoder.
 - **Theme Engine:** A custom settings panel utilizing `localStorage` for persistence. Users can toggle light/dark mode, modify accent colors, and apply preset themes (Vercel, Cyberpunk, Dracula).
-- **Hidden Mechanics:** Includes a Konami Code easter egg (Up, Up, Down, Down, Left, Right, Left, Right, B, A) and custom developer console messages.
+
+## Developer Interaction (Hidden Features)
+For those reviewing the technical depth of this project, several intentional easter eggs have been implemented:
+1. **Developer Console:** Open the browser's Developer Tools (F12) and inspect the console output for a custom greeting and instructions.
+2. **Konami Code:** Input the legacy sequence (`↑ ↑ ↓ ↓ ← → ← → B A`) anywhere on the site to trigger a visual system override (Matrix Mode).
+3. **Terminal Overrides:** Type `matrix`, `sudo`, or `hire` into the homepage terminal for specific system responses.
 
 ## Tech Stack
 - **Frontend:** Pure HTML5, CSS3 (Glassmorphism, CSS Variables, Grid/Flexbox), Vanilla JavaScript (ES6+).

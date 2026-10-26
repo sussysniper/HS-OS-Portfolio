@@ -5,30 +5,30 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-**Live Demo:** [https://hs-os-portfolio.vercel.app/](https://hs-os-portfolio.vercel.app/)
+**Live Application:** [https://hs-os-portfolio.vercel.app/](https://hs-os-portfolio.vercel.app/)
 
-## 🚀 Overview
-HS-OS is a mature, dark-mode "Operating System" built for the **DoTA Vibe Coding Competition**. Engineered entirely with pure Vanilla JS, HTML, and CSS—with zero dependencies or frameworks—it serves as a highly interactive developer portfolio.
+## Overview
+HS-OS is a comprehensive, dark-mode "Operating System" built for the DoTA Vibe Coding Competition. Engineered entirely with pure Vanilla JS, HTML, and CSS—without any external frameworks or dependencies—it functions as a highly interactive, multi-page developer portfolio.
 
-## ✨ Core Features
-- **Interactive Terminal:** A fully functional command-line interface with custom commands (`help`, `about`, `matrix`, `hire`, etc.).
-- **Buddy.AI:** A custom, local, keyword-driven virtual assistant that answers questions about Harsh's resume.
-- **The Arcade:** 5 fully playable games built from scratch (Snake, Tic-Tac-Toe with Minimax AI, Text RPG, Pong, Minesweeper).
-- **Command Palette:** Press `Ctrl + K` to navigate anywhere instantly.
-- **Omni Tools:** Client-side Markdown editor, JSON formatter, and Base64 encoder.
-- **Theme Engine:** Custom settings panel with localStorage persistence, allowing users to toggle light/dark mode, change accent colors, and apply themes (Vercel, Cyberpunk, Dracula).
-- **Easter Eggs:** Try the Konami Code (↑ ↑ ↓ ↓ ← → ← → B A) and check the Developer Console (F12).
+## Core Features
+- **Interactive Terminal:** A fully functional command-line interface supporting custom commands (e.g., `help`, `about`, `matrix`, `hire`).
+- **Buddy.AI:** A custom, local, keyword-driven virtual assistant providing information regarding academic background, technical skills, and project details.
+- **The Arcade:** Five playable games developed from scratch, including Snake, Tic-Tac-Toe (utilizing a Minimax decision algorithm), Text RPG, Pong, and Minesweeper.
+- **Command Palette:** A global navigation interface accessible via `Ctrl + K`.
+- **Developer Tools:** Client-side utilities including a Markdown editor with live rendering, a JSON formatter, and a Base64 encoder/decoder.
+- **Theme Engine:** A custom settings panel utilizing `localStorage` for persistence. Users can toggle light/dark mode, modify accent colors, and apply preset themes (Vercel, Cyberpunk, Dracula).
+- **Hidden Mechanics:** Includes a Konami Code easter egg (Up, Up, Down, Down, Left, Right, Left, Right, B, A) and custom developer console messages.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** Pure HTML5, CSS3 (Glassmorphism, CSS Variables, Grid/Flexbox), Vanilla JavaScript (ES6+).
-- **Architecture:** Component-driven UI injection, `IntersectionObserver` for scroll animations, Web Audio API for synth sounds.
-- **Hosting:** Vercel.
+- **Architecture:** Component-driven UI injection, `IntersectionObserver` for scroll animations, and the Web Audio API for synthesized sound effects.
+- **Deployment:** Vercel.
 
-## 🧑‍💻 Author
+## Author
 **Harsh Sharma**  
-*First-Year Computer Science Student @ BITS Pilani, Hyderabad*  
+First-Year Computer Science Student at BITS Pilani, Hyderabad
 - GitHub: [@sussysniper](https://github.com/sussysniper)
 - LinkedIn: [Harsh Sharma](https://www.linkedin.com/in/harsh-sharma-863947427/)
 
-## ⚙️ Local Setup
-To run this project locally, simply clone the repository and open `index.html` in your browser. No build steps or `npm install` required.
+## Local Setup
+To run this project locally, clone the repository and open `index.html` in your preferred web browser. No build steps or package managers (e.g., `npm install`) are required.

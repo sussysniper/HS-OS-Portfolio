@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biography and academic background of Harsh Sharma — Computer Science at BITS Pilani.">
+  <title>About & Trajectory | Harsh Sharma</title>
+  <!-- FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- STICKY GLASSMORPHISM TOP NAVIGATION BAR (FACEBOOK x NETFLIX) -->
+  <nav class="top-nav" aria-label="Primary Navigation">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-badge">HS<span>OS</span></div>
+    </a>
+    
+    <div class="nav-stats">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        SYS: <span>ONLINE</span>
+      </div>
+      <div class="time-display">
+        TIME: <span id="sys-clock">00:00:00</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="arcade.html">Arcade</a></li>
+      <li><a href="socials.html">Socials</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    
+    <!-- EXECUTIVE BIO SECTION WITH PORTRAIT PHOTO -->
+    <section class="about-hero-grid" aria-label="Executive Biography">
+      
+      <div class="portrait-frame-outer">
+        <div class="portrait-frame-inner">
+          <img src="assets/your-photo.jpg" alt="Harsh Sharma Portrait" loading="eager" onerror="this.src='assets/project1.png'">
+        </div>
+      </div>
+
+      <div class="bio-content">
+        <div class="category-eyebrow">
+          <span>●</span> Executive Profile
+        </div>
+        <h1>Deterministic Software & Applied Intelligence</h1>
+        
+        <p>
+          I am a Computer Science undergraduate at <strong style="color: #ffffff;">BITS Pilani, Hyderabad Campus</strong>. Characterized by an aggressive learning curve and disciplined execution, I engineer low-level systems and explore production machine learning architectures.
+        </p>
+        
+        <p>
+          Currently, my active technical exploration centers on building <em>Chronos</em>—a low-level POSIX task scheduler engineered in modern C++ with automated GNU Makefile builds—alongside vector retrieval-augmented generation systems and competitive programming.
+        </p>
+
+        <p>
+          Beyond pure software, I participate actively in campus governance and research with the Public Policy Association and champion mental wellness with the Mental Health Support Group.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION SECTION: DPS ROHINI (PCM) & BITS PILANI HYDERABAD (2026-2030) -->
+    <section style="margin-top: 4.5rem;" aria-label="Academic Trajectory">
+      <div class="section-header">
+        <div>
+          <div class="category-eyebrow emerald">Academic Trajectory</div>
+          <h2 class="section-title">Education & Credentials</h2>
+        </div>
+      </div>
+
+      <div class="education-grid">
+        
+        <!-- BITS PILANI HYDERABAD (2026-2030) -->
+        <div class="education-card">
+          <div class="icon-circle custom-logo-circle">
+            <img src="assets/bits.png" alt="BITS Pilani Logo">
+          </div>
+          <div>
+            <h3>BITS Pilani, Hyderabad Campus</h3>
+            <p>B.E. in Computer Science</p>
+            <div class="edu-meta">2026 — 2030 | Hyderabad, India</div>
+          </div>
+        </div>
+
+        <!-- DPS ROHINI (PCM) -->
+        <div class="education-card">
+          <div class="icon-circle custom-logo-circle">
+            <img src="assets/dps.png" alt="Delhi Public School Logo">
+          </div>
+          <div>
+            <h3>DPS Rohini</h3>
+            <p>Senior Secondary Education (PCM with Computer Science)</p>
+            <div class="edu-meta">Delhi Public School | Rohini, New Delhi</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ENGINEERING STACK (STRUCTURED FACEBOOK CARD) -->
+    <section style="margin-top: 4.5rem;" aria-label="Core Engineering Stack">
+      <div class="section-header">
+        <div>
+          <div class="category-eyebrow blue">Technical Foundation</div>
+          <h2 class="section-title">Primary Toolchain & Disciplines</h2>
+        </div>
+      </div>
+
+      <div class="fb-card">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+          <div>
+            <h4 style="font-family: var(--font-heading); color: #ffffff; font-size: 1.15rem; margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-microchip" style="color: var(--netflix-red); margin-right: 0.5rem;"></i> Systems & C++
+            </h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Modern C++ (C++20), POSIX Threads, GNU Make, Memory Optimization, Valgrind, Linux CLI, GCC/GDB.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-heading); color: #ffffff; font-size: 1.15rem; margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-brain" style="color: var(--accent-emerald); margin-right: 0.5rem;"></i> Machine Learning
+            </h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Python, Scikit-Learn, PyTorch, Gemini API, Vector Search, Semantic Chunking, Feature Engineering.
+            </p>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-heading); color: #ffffff; font-size: 1.15rem; margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-code" style="color: var(--accent-cyan); margin-right: 0.5rem;"></i> Algorithms
+            </h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+              Graph Traversal, Dynamic Programming, Segment Trees, Greedy Heuristics, Codeforces & AtCoder Benchmarks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BUDDY.AI CONCIERGE WIDGET (STRICTLY BOTTOM-RIGHT) -->
+  <aside id="buddy-widget" aria-label="Buddy AI Concierge">
+    <button class="buddy-trigger" id="buddy-trigger" aria-label="Open Assistant">
+      <i class="fa-solid fa-headset"></i>
+    </button>
+    <div class="buddy-window" id="buddy-window">
+      <div class="buddy-header">
+        <div class="buddy-title">
+          <span>Buddy.AI</span>
+          <span class="buddy-badge">Concierge</span>
+        </div>
+        <button class="buddy-close" id="buddy-close" aria-label="Close Assistant">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="buddy-messages" id="buddy-messages">
+        <div class="msg bot">Good day. I am Buddy.AI. How may I assist you today?</div>
+      </div>
+      <div class="buddy-input-area">
+        <input type="text" id="buddy-input" placeholder="Ask about skills, projects, Kaggle..." aria-label="Message Buddy AI">
+        <button id="buddy-send" aria-label="Send">Send</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+  <script src="js/buddy.js"></script>
+</body>
+</html>

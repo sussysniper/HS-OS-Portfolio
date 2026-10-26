@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HS-OS Arcade — Interactive game suite including Snake, Tic-Tac-Toe, Text RPG, Pong, and Minesweeper.">
+  <title>Arcade & Game Suite | Harsh Sharma</title>
+  <!-- FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- STICKY GLASSMORPHISM TOP NAVIGATION BAR (FACEBOOK x NETFLIX) -->
+  <nav class="top-nav" aria-label="Primary Navigation">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-badge">HS<span>OS</span></div>
+    </a>
+    
+    <div class="nav-stats">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        SYS: <span>ONLINE</span>
+      </div>
+      <div class="time-display">
+        TIME: <span id="sys-clock">00:00:00</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="arcade.html" class="active">Arcade</a></li>
+      <li><a href="socials.html">Socials</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    
+    <header style="text-align: center; margin-bottom: 2.5rem;">
+      <div class="category-eyebrow">
+        <span>●</span> Interactive Streaming
+      </div>
+      <h1 class="page-title" style="margin-bottom: 0.75rem;">
+        <span>HS-OS Arcade Platform</span>
+      </h1>
+      <p class="page-subtitle" style="margin: 0 auto;">
+        Five zero-dependency game engines engineered in vanilla JavaScript with cinematic fullscreen immersion and hardware acceleration.
+      </p>
+    </header>
+
+    <div class="arcade-container">
+      
+      <!-- 5 GAME SWITCHER TABS -->
+      <nav class="game-tab-bar" aria-label="Game Switcher">
+        <button class="game-tab-btn active" data-game="snake"><i class="fa-solid fa-worm"></i> Snake</button>
+        <button class="game-tab-btn" data-game="ttt"><i class="fa-solid fa-xmark"></i> Tic-Tac-Toe</button>
+        <button class="game-tab-btn" data-game="rpg"><i class="fa-solid fa-terminal"></i> Text RPG</button>
+        <button class="game-tab-btn" data-game="pong"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Pong</button>
+        <button class="game-tab-btn" data-game="minesweeper"><i class="fa-solid fa-bomb"></i> Minesweeper</button>
+      </nav>
+
+      <!-- ARCADE DASHBOARD (FULLSCREEN COVERS ENTIRE SCREEN #141414, CURSOR HIDDEN OVER CONTAINER) -->
+      <section class="arcade-dashboard" id="arcade-game-container" aria-label="Game Container">
+        
+        <div class="arcade-top-controls">
+          <div class="arcade-meta" id="arcade-game-title">
+            GAME: <span style="color: var(--netflix-red); font-weight: 700;">SNAKE</span>
+            <span style="margin: 0 0.5rem; color: var(--fb-border);">|</span>
+            <span id="arcade-status">Score: 0 | High: 0</span>
+          </div>
+
+          <div class="arcade-actions">
+            <button id="game-reset-btn" class="btn-arcade secondary" aria-label="Restart Game">
+              <i class="fa-solid fa-rotate-right"></i> Restart
+            </button>
+            <button id="game-maximize-btn" class="btn-arcade primary" aria-label="Enter Fullscreen Mode">
+              <i class="fa-solid fa-expand"></i> Maximize
+            </button>
+            <button id="game-minimize-btn" class="btn-arcade secondary" aria-label="Exit Fullscreen Mode" style="display: none;">
+              <i class="fa-solid fa-compress"></i> Minimize
+            </button>
+          </div>
+        </div>
+
+        <!-- GAME VIEWPORT -->
+        <div class="game-viewport" id="game-viewport">
+          
+          <!-- GAME 1: SNAKE -->
+          <div id="view-snake" class="game-view" style="display: block;">
+            <canvas id="snake-canvas" width="600" height="400" aria-label="Snake Board"></canvas>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); text-align: center; margin-top: 0.75rem;">
+              Controls: Arrow Keys or W / A / S / D. Consume the crimson pulse energy cells.
+            </div>
+          </div>
+
+          <!-- GAME 2: TIC-TAC-TOE -->
+          <div id="view-ttt" class="game-view" style="display: none; width: 100%; text-align: center;">
+            <div style="margin-bottom: 1rem; display: flex; justify-content: center; align-items: center; gap: 0.75rem;">
+              <label for="ttt-diff-select" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">AI Difficulty:</label>
+              <select id="ttt-diff-select" style="background: #242526; border: 1px solid var(--fb-border); color: #ffffff; font-family: var(--font-mono); padding: 0.4rem 0.8rem; border-radius: var(--radius-pill); outline: none;">
+                <option value="easy">Easy (Random)</option>
+                <option value="medium">Medium (Balanced)</option>
+                <option value="hard" selected>Hard (Unbeatable Minimax)</option>
+              </select>
+            </div>
+            <div class="ttt-grid" id="ttt-board"></div>
+            <div id="ttt-message" style="font-family: var(--font-mono); color: var(--netflix-red); font-size: 1rem; margin-top: 0.5rem; font-weight: 700;">
+              Player (X) Turn
+            </div>
+          </div>
+
+          <!-- GAME 3: TEXT RPG -->
+          <div id="view-rpg" class="game-view" style="display: none; width: 100%;">
+            <div class="rpg-terminal">
+              <div class="rpg-log" id="rpg-output"></div>
+              <div class="rpg-input-row">
+                <span style="color: var(--netflix-red); font-family: var(--font-mono); font-weight: 700;">cmd&gt;</span>
+                <input type="text" id="rpg-input" placeholder="Type 'help', 'explore', 'attack', 'heal', 'status'..." autofocus>
+                <button id="rpg-send-btn" class="btn-arcade primary" style="padding: 0.35rem 0.85rem;">Run</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- GAME 4: PONG -->
+          <div id="view-pong" class="game-view" style="display: none;">
+            <canvas id="pong-canvas" width="600" height="400" aria-label="Pong Board"></canvas>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim); text-align: center; margin-top: 0.75rem;">
+              Controls: Move mouse or use W / S or Up / Down arrows to control paddle.
+            </div>
+          </div>
+
+          <!-- GAME 5: MINESWEEPER -->
+          <div id="view-minesweeper" class="game-view" style="display: none; text-align: center;">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-bottom: 0.75rem; font-family: var(--font-mono); font-size: 0.88rem;">
+              <div>MINES: <span id="ms-mine-count" style="color: var(--netflix-red); font-weight: 700;">10</span></div>
+              <button id="ms-flag-toggle" class="btn-arcade secondary" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">
+                Mode: Reveal (Click to Flag)
+              </button>
+              <div>TIME: <span id="ms-timer" style="color: #ffffff; font-weight: 700;">00:00</span></div>
+            </div>
+            <div class="ms-board" id="ms-board"></div>
+            <div id="ms-status" style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem;">
+              Left-click to reveal. Right-click (or toggle mode) to plant flag.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- BUDDY.AI CONCIERGE WIDGET (STRICTLY BOTTOM-RIGHT) -->
+  <aside id="buddy-widget" aria-label="Buddy AI Concierge">
+    <button class="buddy-trigger" id="buddy-trigger" aria-label="Open Assistant">
+      <i class="fa-solid fa-headset"></i>
+    </button>
+    <div class="buddy-window" id="buddy-window">
+      <div class="buddy-header">
+        <div class="buddy-title">
+          <span>Buddy.AI</span>
+          <span class="buddy-badge">Concierge</span>
+        </div>
+        <button class="buddy-close" id="buddy-close" aria-label="Close Assistant">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="buddy-messages" id="buddy-messages">
+        <div class="msg bot">Good day. I am Buddy.AI. How may I assist you today?</div>
+      </div>
+      <div class="buddy-input-area">
+        <input type="text" id="buddy-input" placeholder="Ask about skills, projects, Kaggle..." aria-label="Message Buddy AI">
+        <button id="buddy-send" aria-label="Send">Send</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/main.js"></script>
+  <script src="js/buddy.js"></script>
+  <script src="js/arcade.js"></script>
+</body>
+</html>

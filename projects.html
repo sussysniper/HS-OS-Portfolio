@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineered software systems, machine learning architectures, and algorithms by Harsh Sharma.">
+  <title>Projects & Engineered Systems | Harsh Sharma</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hey developer, you're looking in the right place. If you like what you see, let's talk. Email: harsh.sharma80027090@gmail.com -->
+  <div id="scroll-bar" aria-hidden="true"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <nav class="top-nav" aria-label="Primary Navigation">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-badge">HS<span>OS</span></div>
+    </a>
+    <div class="nav-stats">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        SYS: <span>ONLINE</span>
+      </div>
+      <div class="time-display">
+        TIME: <span id="sys-clock">00:00:00</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="arcade.html">Arcade</a></li>
+      <li><a href="socials.html">Socials</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <header>
+      <div class="category-eyebrow">
+        <span>●</span> Streaming Catalog
+      </div>
+      <h1 class="page-title">
+        <span>Featured Projects & Engineering Lab</span>
+      </h1>
+      <p class="page-subtitle">
+        Verified, production-ready architectures spanning competitive machine learning, POSIX automation, retrieval augmented generation, and systems programming.
+      </p>
+    </header>
+    <div class="projects-grid">
+      <a href="https://github.com/sussysniper/NeuralFlood-Kaggle" target="_blank" rel="noopener noreferrer" class="project-card-full project-card">
+        <div class="project-thumb-wrap">
+          <span class="project-badge-tag">Kaggle Sprint</span>
+          <img src="assets/project1.png" alt="NeuralFlood Kaggle Project" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-header-row">
+            <h2 class="project-title">NeuralFlood (Kaggle)</h2>
+            <span class="project-arrow-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p class="project-desc">
+            Engineered, trained, and evaluated 52 ML models in a 48-hour Kaggle hackathon. Mastered domain shift, feature collinearity, and data leakage prevention under high-dimensional constraints.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Scikit-Learn</span>
+            <span class="project-tag">52 Models</span>
+            <span class="project-tag">Kaggle</span>
+          </div>
+        </div>
+      </a>
+      <a href="https://github.com/sussysniper/Synapse-RAG-Chatbot" target="_blank" rel="noopener noreferrer" class="project-card-full project-card">
+        <div class="project-thumb-wrap">
+          <span class="project-badge-tag" style="background: var(--accent-blue);">AI Research</span>
+          <img src="assets/project2.png" alt="Synapse RAG Chatbot" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-header-row">
+            <h2 class="project-title">Synapse (RAG Chatbot)</h2>
+            <span class="project-arrow-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p class="project-desc">
+            Built a contextual Retrieval-Augmented Generation chatbot from scratch leveraging the Gemini API and vector search context retrieval for domain synthesis without hallucinations.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Gemini API</span>
+            <span class="project-tag">Vector Search</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">RAG</span>
+          </div>
+        </div>
+      </a>
+      <a href="https://eu1.make.com/public/shared-scenario/L6zZfHK7xrx/chronos-the-make-task-scheduler" target="_blank" rel="noopener noreferrer" class="project-card-full project-card">
+        <div class="project-thumb-wrap">
+          <span class="project-badge-tag" style="background: var(--accent-emerald);">Task Automation</span>
+          <img src="assets/project3.png" alt="Chronos Make Task Scheduler" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-header-row">
+            <h2 class="project-title">Chronos (Make Scheduler)</h2>
+            <span class="project-arrow-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p class="project-desc">
+            Task automation and scheduling scenario engineered using Make (Integromat) for deterministic queue processing, priority job dispatch, and workflow automation.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Make.com</span>
+            <span class="project-tag">Automation</span>
+            <span class="project-tag">Scheduler</span>
+            <span class="project-tag">Queues</span>
+          </div>
+        </div>
+      </a>
+      <a href="#omni-tool" class="project-card-full project-card">
+        <div class="project-thumb-wrap">
+          <span class="project-badge-tag" style="background: #eab308;">Utility Tool</span>
+          <img src="assets/project4.png" alt="Omni File Converter" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-header-row">
+            <h2 class="project-title">Omni (File Converter)</h2>
+            <span class="project-arrow-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p class="project-desc">
+            Versatile utility tool engineered for high-throughput stream conversion, parsing, and transmuting across heterogeneous file formats with minimal memory overhead.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">File Processing</span>
+            <span class="project-tag">Utility</span>
+            <span class="project-tag">CLI</span>
+          </div>
+        </div>
+      </a>
+      <a href="https://codeforces.com/profile/Sorted_Noob" target="_blank" rel="noopener noreferrer" class="project-card-full project-card">
+        <div class="project-thumb-wrap">
+          <span class="project-badge-tag">Competitive</span>
+          <img src="assets/codeforces.png" alt="Algorithmic Grind Codeforces & AtCoder" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-header-row">
+            <h2 class="project-title">Algorithmic Grind</h2>
+            <span class="project-arrow-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p class="project-desc">
+            High-performance C++ algorithmic problem-solving repository optimized for Codeforces, AtCoder, and LeetCode benchmarks with advanced graph, DP, and segment tree implementations.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">C++20</span>
+            <span class="project-tag">Codeforces</span>
+            <span class="project-tag">AtCoder</span>
+            <span class="project-tag">Algorithms</span>
+          </div>
+        </div>
+      </a>
+      <a href="https://github.com/sussysniper/HS-OS-Portfolio" target="_blank" rel="noopener noreferrer" class="project-card-full project-card">
+        <div class="project-thumb-wrap">
+          <span class="project-badge-tag">Platform</span>
+          <img src="assets/project6.png" alt="HS-OS Portfolio Platform" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-header-row">
+            <h2 class="project-title">HS-OS</h2>
+            <span class="project-arrow-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <p class="project-desc">
+            This portfolio: an executive digital platform drawing inspiration from Netflix & Facebook. Engineered with pure HTML/CSS/Vanilla JS, zero dependencies, hardware acceleration, and integrated arcade games.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Vanilla JS</span>
+            <span class="project-tag">Netflix/FB UI</span>
+            <span class="project-tag">Hardware Accelerated</span>
+            <span class="project-tag">Portfolio</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <section style="margin-top: 5rem;" aria-label="Live Sentiment Analysis">
+      <div class="neural-link-card" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div class="neural-link-info">
+          <div class="category-eyebrow" style="margin-bottom: 0.6rem;"><span>●</span> Local AI Module</div>
+          <h3>Live Sentiment Analysis (Local)</h3>
+          <p>A 100% client-side BERT-mock. Type a sentence to analyze its sentiment.</p>
+        </div>
+        <div>
+          <input type="text" id="sentiment-input" placeholder="This website is amazing!" style="width: 100%; padding: 12px; background: #0a0a0a; border: 1px solid var(--netflix-red, #ff003c); color: white; border-radius: 6px; margin-bottom: 10px; outline: none;">
+          <button onclick="analyzeSentiment()" style="background: var(--netflix-red, #ff003c); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">Analyze</button>
+          <p id="sentiment-result" style="margin-top: 10px; font-weight: bold; color: var(--netflix-red, #ff003c);"></p>
+        </div>
+      </div>
+    </section>
+    <!-- OMNI TOOL -->
+    <section id="omni-tool" class="neural-link-card" style="margin-top: 3rem; display: block;">
+        <h3 style="color: white; margin-bottom: 1rem;">Omni Tool — Data Transmuter</h3>
+        <p style="color: #9ca3af; margin-bottom: 1rem;">Format JSON or Encode/Decode Base64.</p>
+        <textarea id="omni-input" aria-label="Omni input" style="width: 100%; height: 100px; background: #0a0a0a; color: white; border: 1px solid var(--netflix-red, #ff003c); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;"></textarea>
+        <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+            <button onclick="formatJSON()" class="btn-launch-neural">Format JSON</button>
+            <button onclick="encodeBase64()" class="btn-launch-neural">Encode Base64</button>
+            <button onclick="decodeBase64()" class="btn-launch-neural">Decode Base64</button>
+        </div>
+        <textarea id="omni-output" aria-label="Omni output" readonly style="width: 100%; height: 100px; background: #0a0a0a; color: var(--netflix-red, #ff003c); border: 1px solid var(--netflix-red, #ff003c); padding: 1rem; border-radius: 8px;"></textarea>
+    </section>
+
+    <!-- MARKDOWN EDITOR -->
+    <section class="neural-link-card" style="margin-top: 3rem; display: block;">
+        <h3 style="color: white; margin-bottom: 1rem;">Markdown Playground</h3>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <textarea id="md-input" placeholder="Type Markdown here..." aria-label="Markdown input" style="width: calc(50% - 0.5rem); min-width: 240px; height: 150px; background: #0a0a0a; color: white; border: 1px solid var(--netflix-red, #ff003c); padding: 1rem; border-radius: 8px;"></textarea>
+            <div id="md-output" aria-label="Markdown preview" style="width: calc(50% - 0.5rem); min-width: 240px; height: 150px; border: 1px solid rgba(255,255,255,0.1); padding: 1rem; overflow-y: auto; color: white; border-radius: 8px; background: rgba(255,255,255,0.02);"></div>
+        </div>
+    </section>
+
+    <!-- TYPING TEST -->
+    <section class="neural-link-card" style="margin-top: 3rem; display: block;">
+        <h3 style="color: white; margin-bottom: 1rem;">Typing Speed Test (WPM)</h3>
+        <p id="type-target" style="font-family: monospace; color: var(--netflix-red, #ff003c); background: #000; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; overflow-wrap: anywhere;">const fetchData = async () => { const res = await fetch(url); }</p>
+        <input type="text" id="type-input" placeholder="Click here and start typing..." aria-label="Typing test input" style="width: 100%; padding: 1rem; background: #0a0a0a; border: 1px solid var(--netflix-red, #ff003c); color: white; border-radius: 8px;">
+        <p id="type-result" style="margin-top: 1rem; color: var(--netflix-red, #ff003c); font-weight: bold;"></p>
+    </section>
+  </main>
+  <aside id="buddy-widget" aria-label="Buddy AI Concierge">
+    <button class="buddy-trigger" id="buddy-trigger" aria-label="Open Assistant">
+      <i class="fa-solid fa-headset"></i>
+    </button>
+    <div class="buddy-window" id="buddy-window">
+      <div class="buddy-header">
+        <div class="buddy-title">
+          <span>Buddy.AI</span>
+          <span class="buddy-badge">Concierge</span>
+        </div>
+        <button class="buddy-close" id="buddy-close" aria-label="Close Assistant">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="buddy-messages" id="buddy-messages">
+        <div class="msg bot">Good day. I am Buddy.AI. How may I assist you today?</div>
+      </div>
+      <div class="buddy-input-area">
+        <input type="text" id="buddy-input" placeholder="Ask about skills, projects, Kaggle..." aria-label="Message Buddy AI">
+        <button id="buddy-send" aria-label="Send">Send</button>
+      </div>
+    </div>
+  </aside>
+  <div id="cmd-palette" class="cmd-palette-overlay" hidden>
+    <section class="glass-card cmd-palette" role="dialog" aria-modal="true" aria-labelledby="cmd-title">
+      <h2 id="cmd-title" class="cmd-title">Command Palette</h2>
+      <label class="visually-hidden" for="cmd-input">Search commands</label>
+      <input id="cmd-input" type="search" placeholder="Type a command..." autocomplete="off" aria-controls="cmd-results">
+      <ul id="cmd-results" role="listbox" aria-label="Commands"></ul>
+      <p class="cmd-hint">↑ ↓ to navigate · Enter to select · Esc to close</p>
+    </section>
+  </div>
+  <script>
+    function analyzeSentiment() {
+      const input = document.getElementById('sentiment-input');
+      const result = document.getElementById('sentiment-result');
+      const text = input.value.toLowerCase();
+      if (!text) { result.innerText = ''; return; }
+      if (text.includes('good') || text.includes('great') || text.includes('amazing')) result.innerText = 'Positive Sentiment 😊';
+      else if (text.includes('bad') || text.includes('terrible')) result.innerText = 'Negative Sentiment 😠';
+      else result.innerText = 'Neutral 😐';
+    }
+
+    function formatJSON() {
+      try {
+        const input = document.getElementById('omni-input').value;
+        document.getElementById('omni-output').value = JSON.stringify(JSON.parse(input), null, 4);
+      } catch (error) {
+        document.getElementById('omni-output').value = 'Invalid JSON';
+      }
+    }
+
+    function encodeBase64() {
+      const input = document.getElementById('omni-input').value;
+      try {
+        document.getElementById('omni-output').value = btoa(unescape(encodeURIComponent(input)));
+      } catch (error) {
+        document.getElementById('omni-output').value = 'Unable to encode input';
+      }
+    }
+
+    function decodeBase64() {
+      try {
+        const decoded = atob(document.getElementById('omni-input').value.trim());
+        document.getElementById('omni-output').value = decodeURIComponent(escape(decoded));
+      } catch (error) {
+        document.getElementById('omni-output').value = 'Invalid Base64';
+      }
+    }
+
+    const mdInput = document.getElementById('md-input');
+    if (mdInput) {
+      mdInput.addEventListener('input', (event) => {
+        document.getElementById('md-output').innerHTML = window.marked
+          ? marked.parse(event.target.value)
+          : 'Markdown preview is unavailable.';
+      });
+    }
+
+    let startTime;
+    const targetText = 'const fetchData = async () => { const res = await fetch(url); }';
+    const typeInput = document.getElementById('type-input');
+    if (typeInput) {
+      typeInput.addEventListener('input', () => {
+        if (!startTime) startTime = new Date();
+        if (typeInput.value === targetText) {
+          const seconds = (new Date() - startTime) / 1000;
+          const wpm = seconds > 0 ? Math.round((targetText.length / 5) / (seconds / 60)) : 0;
+          document.getElementById('type-result').innerText = `Done! Speed: ${wpm} WPM`;
+          startTime = null;
+          typeInput.value = '';
+        }
+      });
+    }
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/buddy.js"></script>
+  <div class="easter-egg-hint" style="position: fixed; right: 92px; bottom: 14px; z-index: 1900; color: var(--text-dim); font-size: 0.68rem; opacity: 0.7; pointer-events: none;">// Hint: ↑ ↑ ↓ ↓ ← → ← → B A</div>
+</body>
+</html>
+
+
+
